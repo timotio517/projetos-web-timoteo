@@ -11,6 +11,7 @@ body {
     font-size: 100%;
     background: linear-gradient(to left, rgba(12, 12, 12, 1), rgba(1, 63, 52, 1));
     gap: 20PX;
+    transition: .5s;
 }
 .cabecalho{
     display: flex;
@@ -24,14 +25,56 @@ body {
    color: white;
    font-family:  "Special Gothic Expanded One", sans-serif;
 }
-.cabecalho-menu:hover{
+.cabecalho-menu-item:hover{
     color: rgb(182, 226, 182);
+     transition:  color 0.3s;
+}
+
+.cabecalho-menu-item{
+    color: white;
 }
 .cabecalho-menu{
     display: flex;
     gap: 32px;
      font-family:  "Special Gothic Expanded One", sans-serif;
-     color: white;
+}
+.trilho{
+    width: 60px;
+    height: 30px;
+    background-color: rgb(71, 70, 70);
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.trilho .indicador{
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   background-color: rgb(0, 0, 0);
+   transform: scale(.9); 
+   position: absolute;
+   left: 0;
+   transition: .5s;
+}
+.trilho.dark{
+    background-color: lightgray;
+}
+.trilho.dark .indicador{
+    left: 30px;
+    background-color: white;
+}
+
+body.dark{
+    background: linear-gradient(to left, rgb(107, 104, 104), rgb(227, 231, 228));
+}
+body.dark h1{
+    color: black;
+}
+body.dark p{
+    color: black;
+}
+body.dark a{
+    color: black;
 }
 
 .Main{
@@ -72,15 +115,7 @@ body {
     color: white;
     margin: auto;
 }
-.main-botão-sessão-1{
-    background-color: white;
-    width:80px ;
-    height:40px ;
-    border: none;
-    border-radius: 40px;
-    box-shadow:4px 5px 4px black ;
-}
-.main-imagem-sessão-1{
+.main-imagem1-sessão-1{
     max-width: 600px;
     max-width: 400px;
     border-radius: 50%;
