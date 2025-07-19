@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-size: 100%;
+    background: linear-gradient(to left, rgba(12, 12, 12, 1), rgba(1, 63, 52, 1));
+    gap: 20PX;
+}
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.cabecalho-titulo{
+   color: white;
+   font-family:  "Special Gothic Expanded One", sans-serif;
+}
+.cabecalho-menu:hover{
+    color: rgb(182, 226, 182);
+}
+.cabecalho-menu{
+    display: flex;
+    gap: 32px;
+     font-family:  "Special Gothic Expanded One", sans-serif;
+     color: white;
+}
+
+.Main{
+    border-top: 0.4px solid white ;
+    margin-bottom: 20px;
+}
+
+.Sessão-1{ 
+     display: flex;
+     flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-Sessão-1-conteudo-escrito{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    max-width: 600px;
+    margin-top: 40px;
+}
+.main-Sessão-1-conteudo-grafico{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 40px;
+}
+.main-titulo-sessão-1{
+   font-family:"Special Gothic Expanded One", sans-serif;
+   font-weight: 400;
+   font-size: normal;
+   color: white;
+   margin: auto;
+}
+.main-paragrafo-sessão-1{
+    font-family:"Special Gothic Expanded One", sans-serif;
+    color: white;
+    margin: auto;
+}
+.main-botão-sessão-1{
+    background-color: white;
+    width:80px ;
+    height:40px ;
+    border: none;
+    border-radius: 40px;
+    box-shadow:4px 5px 4px black ;
+}
+.main-imagem-sessão-1{
+    max-width: 600px;
+    max-width: 400px;
+    border-radius: 50%;
+    margin-right: 60px;
+}
+.Roda-pé{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    border-top: 0.4px solid white;
+    margin-top: 300px;
+}
+.Roda-pé-titulo{
+    margin: auto;
+      font-family:"Special Gothic Expanded One", sans-serif;
+      color: white;
+
+}
+.Roda-pé-menu-projetos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.Roda-pé-menu-link{
+    max-width: 40px;
+    max-height: 40px;
+
+}
+
